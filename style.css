@@ -40,6 +40,11 @@ body {
      color: var(--green);
      padding: 0rem 1rem;
      border-bottom: 2px solid var(--green);
+     position: fixed; /* Makes the navbar fixed at the top */
+     top: 0; /* Positions it at the top */
+     left: 0; /* Aligns it to the left edge of the page */
+     width: 100%; /* Ensures it stretches across the entire width */
+     z-index: 1000; /* Ensures it's above other content */
 }
  
 .nav-bar h1 {
@@ -57,6 +62,7 @@ body {
      color: var(--green);
      padding: 1rem;
      text-decoration: none;
+     cursor: pointer;
 }
  
 .link-container a:hover {
@@ -308,6 +314,7 @@ body {
      gap: 10px;
      flex-wrap: wrap;
      justify-content: flex-start;
+     cursor: pointer;
      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
