@@ -87,6 +87,8 @@ body {
      justify-content: space-between;
      background-color: var(--black);
      color: var(--white);
+     height: 100vh;
+     margin-top: 3rem;
      padding: 2rem;
 }
 
@@ -141,7 +143,7 @@ body {
 
 .about-me{
      height: 80vh;
-     margin: 4rem 2rem;
+     margin: 20vh 2rem;
 }
 
 .terminal-header {
@@ -472,7 +474,9 @@ body {
           flex-direction: column-reverse;
           gap: 2rem;
           padding: 1.5rem;
+          margin-top: 3.5rem !important;
           margin: 0px;
+          height: auto;
      }
 
      .project-section{
@@ -535,4 +539,65 @@ body {
      }
 
      
+}
+
+
+@media (max-width: 768px) {
+     /* nav bar */
+     .nav-bar {
+          padding: 1rem;
+          border-bottom: 2px solid var(--green);
+     }
+     .link-container {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 63px;
+          right: 0px;
+          width: 100%;
+          background-color: var(--green);
+          padding: 1rem;
+          z-index: 10;
+     }
+     
+     .link-container a{
+          color: var(--black);
+          text-align: left;
+          font-size: 1rem;
+          padding: 10px;
+          font-weight: 800;
+     }
+
+     .terminal-body {
+          padding: 1rem;
+     }
+
+     .link-container li {
+          padding: 10px;
+          border-bottom: 2px solid var(--black);
+     }
+
+
+     .link-container.show {
+          display: flex;
+     }
+  
+     .icon {
+          display: block;
+     }
+     
+     .hero-text h1 {
+          font-size: 2rem;
+     }
+
+     .hero-text p {
+          font-size: 1rem;
+     }
+
+     .img-container {
+          width: 250px;
+          height: auto;
+     }
+
+
 }
