@@ -12,10 +12,10 @@
      <nav class="nav-bar">
           <h1>nxco</h1>
           <ul class="link-container" id="navLinks">
-              <li><a href="">About Me</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Contact Me!</a></li>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact Me!</a></li>
           </ul>
           <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
               <i class="fa fa-bars"></i>
@@ -29,7 +29,7 @@
                     <h1>Jerwin Nico H. Quijano</h1>
                </span>
                <p>I am a second-year Bachelor of Science in Information Technology student aspiring to become a front-end web developer. I am passionate about creating simple and beautiful websites.</p>
-               <a href="" class="learn-btn">LEARN MORE</a>
+               <a href="#aboutme" class="learn-btn">LEARN MORE</a>
           </div>
 
           <div class="img-container">
@@ -37,7 +37,7 @@
           </div>
      </main>
      
-     <main class="about-me">
+     <main class="about-me" id="aboutme">
           <div class="terminal-header">
                <span class="circle-1"></span>
                <span class="circle-2"></span>
@@ -45,61 +45,105 @@
           </div>
           <div class="terminal-body">
                <h1>About me</h1>
-               <p>&gt; Name</p>
-               <p class="output">"Jerwin Nico H. Quijano"</p>
+               <div class="name-info">
+                    <p>&gt; Name</p>
+                    <p class="output">"Jerwin Nico H. Quijano"</p>
+               </div>
+               <div class="who">
+                    <p>&gt; Who am i?</p>
+                    <p class="output">
+                         "I’m a second-year BSIT student with a passion for front-end development. I enjoy creating dynamic, user-friendly web interfaces and constantly seek to improve my skills by learning new technologies. I’m focused on mastering HTML, CSS, and JavaScript, while also exploring frameworks like React and Bootstrap. My goal is to build responsive, visually appealing websites that offer seamless user experiences, and to grow into a skilled front-end developer."
+                    </p>
+               </div>
+               <div class="educ">
+                    <p>&gt; Jerwin's Education</p>
+                    <p class="output">&gt; Elementary Education.</p>
+                    <p class="indent-output">&gt; Lucena South 1 Elementary School (2010-2016)</p>
+                    <!--  highschool -->
 
-               <p>&gt; Who am i?</p>
-               <p class="output">
-                    "I’m a second-year BSIT student with a passion for front-end development. I enjoy creating dynamic, user-friendly web interfaces and constantly seek to improve my skills by learning new technologies. I’m focused on mastering HTML, CSS, and JavaScript, while also exploring frameworks like React and Bootstrap. My goal is to build responsive, visually appealing websites that offer seamless user experiences, and to grow into a skilled front-end developer."
-               </p>
+                    <p class="output">&gt; Highschool Education.</p>
+                    <p class="indent-output">&gt; Quezon National Highschool (2016-2020)</p>
+                    <!-- senior highschool -->
+                    <p class="output">&gt; Senior Highschool Education.</p>
+                    <p class="indent-output">&gt; Quezon National Highschool (2020-2022)</p>
 
-               <p>&gt; Jerwin's Education</p>
-               <p class="output">&gt; Elementary Education.</p>
-               <p class="indent-output">&gt; Lucena South 1 Elementary School (2010-2016)</p>
-               <!--  highschool -->
+                    <p class="indent-output-1"> ["TVL-ICT Computer System Servicing", (CSS)]</p>
 
-               <p class="output">&gt; Highschool Education.</p>
-               <p class="indent-output">&gt; Quezon National Highschool (2016-2020)</p>
-               <!-- senior highschool -->
-               <p class="output">&gt; Senior Highschool Education.</p>
-               <p class="indent-output">&gt; Quezon National Highschool (2020-2022)</p>
+                    <p class="indent-output-1"> "With Honors"</p>
 
-               <p class="indent-output-1"> ["TVL-ICT Computer System Servicing", (CSS)]</p>
+                    <!-- college -->
+                    <p class="output">&gt; Collge Education</p>
+                    <p class="indent-output">&gt; Dalubhasaan ng lungsod ng lucena (2023 - Present)</p>
 
-               <p class="indent-output-1"> "With Honors"</p>
+                    <p class="indent-output-1"> ["Bachelor of Science in Information Technology", ("BSIT")]</p>
+               </div>
+               <div class="bdd">
+                    <p>&gt; Birthdate</p>
+                    <p class="output">"06/19/2005"</p>
+               </div>
 
-               <!-- college -->
-               <p class="output">&gt; Collge Education</p>
-               <p class="indent-output">&gt; Dalubhasaan ng lungsod ng lucena (2023 - Present)</p>
-
-               <p class="indent-output-1"> ["Bachelor of Science in Information Technology", ("BSIT")]</p>
-
-               <p>&gt; Birthdate</p>
-               <p class="output">"06/19/2005"</p>
-
-               <p>&gt; Jerwin Nico Interest</p>
-               <p class="output">["Cycling", "Play Online Games", "Code", "Listen to Music"]</p>
-
-               <p>&gt; Jerwin Nico Skills</p>
-               <p class="output">
-                    ["JavaScript", "HTML", "CSS", "git","Python","Responsive Design", "Figma"]
-               </p>
+               <div class="interest">
+                    <p>&gt; Jerwin Nico Interest</p>
+                    <p class="output">["Cycling", "Play Online Games", "Code", "Listen to Music"]</p>
+               </div>
+               <div class="skills" id="skills">
+                    <p>&gt; Jerwin Nico Skills</p>
+                    <p class="output">
+                         ["JavaScript", "HTML", "CSS", "git", "Python", "Responsive Design", "Figma"]
+                    </p>
+                     
+                    <p>&gt; JavaScript</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar js">20%</div>
+                    </div>
+                     
+                    <p>&gt; HTML</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar html">90%</div>
+                    </div>
+                     
+                    <p>&gt; CSS</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar css">70%</div>
+                    </div>
+                     
+                    <p>&gt; git</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar git">30%</div>
+                    </div>
+                     
+                    <p>&gt; Python</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar python">75%</div>
+                    </div>
+                     
+                    <p>&gt; Responsive Design</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar responsive">60%</div>
+                    </div>
+                     
+                    <p>&gt; Figma</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar figma">50%</div>
+                    </div>
+          
+               </div>
 
                <span class="my-typing">
                     <p>&gt;</p>
                     <p class="typing">&nbsp;&nbsp;</p>
                </span>
-               
-
-
+          
           </div>
      </main>
 
-     <main class="project-section">
+     <main class="project-section" id="projects">
           <h1 class="project-h1">Projects</h1>
           <!-- Lustrio Website -->
           <div class="card">
-               <div class="card-image"></div>
+               <div class="card-image">
+                    <img src="./images/kiss ni ming.gif" alt="">
+               </div>
                <div class="card-disc">
                     <h1>Lustrio Website</h1>
                     <p>Lustrio is a stylish and inviting coffee shop website that captures the essence of a cozy café experience. The site features a modern, user-friendly design with easy navigation and a responsive layout, ensuring an optimal browsing experience on any device. Whether you're looking to explore our menu, learn more about our story, or visit us, Lustrio offers a seamless, engaging experience for coffee lovers.</p>
@@ -107,12 +151,11 @@
                          <span class="lang-use">HTML</span>
                          <span class="lang-use">CSS</span>
                          <span class="lang-use">JavaScript</span>
-
                     </div>
 
                     <div class="button-container">
-                         <a href="https://jerwinq19.github.io/PELEC-201-Lustrio/" id="open-link">Open Website</a>
-                         <a href="https://github.com/jerwinq19/PELEC-201-Lustrio" id="view-link">View on Github</a>
+                         <a href="https://jerwinq19.github.io/PELEC-201-Lustrio/" id="open-link" target="_blank">Open Website</a>
+                         <a href="https://github.com/jerwinq19/PELEC-201-Lustrio" id="view-link" target="_blank">View on Github</a>
                     </div>
                </div>
           </div>
@@ -124,22 +167,27 @@
                     <div class="lang-container">
                          <span class="lang-use">HTML</span>
                          <span class="lang-use">CSS</span>
+                         <span class="lang-use">JavaScript</span>
                     </div>
 
                     <div class="button-container">
-                         <a href="" id="open-link">Open Website</a>
-                         <a href="https://github.com/jerwinq19/quijano-finals-hands-on-exam" id="view-link">View on Github</a>
+                         <a href="https://jerwinq19.github.io/quijano-finals-hands-on-exam/" id="open-link" target="_blank">Open Website</a>
+                         <a href="https://github.com/jerwinq19/quijano-finals-hands-on-exam" id="view-link" target="_blank">View on Github</a>
                     </div>
                </div>
 
-               <div class="card-image"></div>
+               <div class="card-image">
+                    <img src="./images/kiss ni ming.gif" alt="">
+               </div>
           </div>
 
           <!-- todo list ni jerwin -->
 
           <div class="card">
 
-               <div class="card-image"></div>
+               <div class="card-image">
+                    <img src="./images/kiss ni ming.gif" alt="">
+               </div>
 
                <div class="card-disc">
                     <h1>Maangas na Todo-List ni Jerwin</h1>
@@ -148,12 +196,11 @@
                          <span class="lang-use">HTML</span>
                          <span class="lang-use">CSS</span>
                          <span class="lang-use">JavaScript</span>
-
                     </div>
 
                     <div class="button-container">
-                         <a href="https://jerwinq19.github.io/todo-list-ni-jarwin/" id="open-link" >Open Website</a>
-                         <a href="https://github.com/jerwinq19/todo-list-ni-jarwin" id="view-link">View on Github</a>
+                         <a href="https://jerwinq19.github.io/todo-list-ni-jarwin/" id="open-link" target="_blank">Open Website</a>
+                         <a href="https://github.com/jerwinq19/todo-list-ni-jarwin" id="view-link" target="_blank">View on Github</a>
                     </div>
                </div>
 
@@ -161,7 +208,7 @@
      </main>
 
 
-     <section class="contact">
+     <section class="contact" id="contact">
           <div class="cont-container">
                <div class="terminal-header">
                     <span class="circle-1"></span>
