@@ -33,6 +33,17 @@ body {
      background-color: var(--gray);
 }
 
+/* particle js styling bg */
+#particles-js {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     background-color: #00CA4E;
+}
+
 /* Navbar styling */
 .nav-bar {
      display: flex;
@@ -162,7 +173,10 @@ body {
      margin: 5rem 2rem;
      height: 500px;
 }
+/* end of hero page styling */
 
+
+/* terminal styling */
 .terminal-header {
      display: flex;
      align-items: center;
@@ -238,6 +252,11 @@ body {
      color: #00CA4E;
      margin-bottom: 15px;
 }
+
+.output:hover {
+     text-shadow: 0px 0px 10px var(--green);
+}
+
  
 .indent-output {
      margin-left: 25px;
@@ -251,6 +270,8 @@ body {
      margin-bottom: 20px;
 }
 
+
+
 .skills-percent {
      padding: 1rem;
 }
@@ -258,12 +279,22 @@ body {
 .skill-wrapper {
      width: 100%;
      border: 2px solid var(--green);
+     transition: all 1 ease;
 }
 
 .skill-bar {
      background-color: #00CA4E;
      padding: 5px;
      color: var(--black);
+     transition: all 0.5 ease;
+}
+
+.skill-wrapper:hover {
+     transform: translateY(-5px);
+}
+
+.skill-bar:hover, .skill-wrapper:hover{
+     box-shadow: 0px 0px 10px var(--green);
 }
 
 .js {
@@ -293,8 +324,9 @@ body {
 .figma {
      width: 50%;
 }
+/* end of terminal styling */
 
-
+/* typing animaton */
 .my-typing {
      display: inline-flex;
      justify-content: center;
@@ -302,7 +334,10 @@ body {
      margin-top: 10px;
      gap: 1rem;
 }
+/* end of my-typing styling */
 
+
+/* project section */
 .project-section {
      display: flex;
      flex-direction: column;
@@ -327,6 +362,12 @@ body {
      border-radius: 1rem;
      padding: 1rem;
 }
+
+.card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0px 0px 20px var(--green);
+}
+
 
 .card-disc {
      display: flex;
@@ -370,6 +411,7 @@ body {
      padding: 20px;
      border-radius: 10px;
      border: 3px solid var(--green);
+     transition: all 1s ease;
 }
 
 .lang-container span:hover {
@@ -393,6 +435,7 @@ body {
 #open-link {
      background-color: #00CA4E;
      border: 3px solid var(--green);
+     transition: all 0.5s ease-in-out;
 }
 
 #open-link:hover {
@@ -405,6 +448,7 @@ body {
 #view-link {
      color: var(--gray);
      border: 3px solid var(--green);
+     transition: all 0.5s ease-in-out;
 }
 
 #view-link:hover {
@@ -413,14 +457,20 @@ body {
      transform: translateY(-5px);
      box-shadow: var(--green) 0px 0px 20px;     
 }
+/* end of project section styling */
 
+/* contact styling */
 .contact {
      padding: 2rem;
 }
 .t-link {
      color: #FF605C;
+     transition: all 1s ease-in-out;
 }
-
+.t-link:hover {
+     text-shadow: 0px 0px 10px #FF605C;
+}
+/* end of contact styling */
 
 /* simple typing animation */
 .typing {
