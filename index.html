@@ -7,8 +7,11 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="style.css">
      <link rel="shortcut icon" href="./images/ico malupit.ico" type="image/x-icon">
+     <!-- particle js lib script -->
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body id="">
+     <!-- nav bar -->
      <nav class="nav-bar">
           <a href="" id="#home" class="nav-a">nxco</a>
           <ul class="link-container" id="navLinks">
@@ -22,7 +25,9 @@
               <i class="fa fa-bars"></i>
           </a>
      </nav>
+     <!-- end of nav bar -->
 
+     <!-- hero page -->
      <main class="hero-page" id="home">
 
           <div class="hero-text">
@@ -37,7 +42,9 @@
                <img src="./images/is me.jpg" alt="">
           </div>
      </main>
-     
+     <!-- end of hero page -->
+
+     <!-- about me -->
      <main class="about-me hidden">
           <div class="terminal-header" id="aboutme">
                <span class="circle-1"></span>
@@ -95,7 +102,9 @@
           
           </div>
      </main>
+     <!-- end of about me -->
 
+     <!-- skills container -->
      <section class="skill-cont hidden">
           <div class="terminal-header" id="skills">
                <span class="circle-1"></span>
@@ -152,7 +161,9 @@
                </div>
           </div>
      </section>
+     <!-- end of skills container -->
 
+     <!-- project section -->
      <main class="project-section">
           <h1 class="project-h1"  id="projects">Projects</h1>
           <!-- Lustrio Website -->
@@ -222,8 +233,9 @@
 
           </div>
      </main>
+     <!-- end of project section -->
 
-
+     <!-- contact -->
      <section class="contact hidden" id="contact">
           <div class="cont-container">
                <div class="terminal-header">
@@ -255,23 +267,29 @@
                </div>
           </div>
      </section>
+     <!-- end of contact section -->
 
-
+     <!-- footer -->
      <footer class="myfooter">
           <div class="footer-copyright">
                <p>&copy; 2024 Jerwin Nico H. Quijano. All rights reserved.</p>
           </div>
      </footer>
-     <!-- include all this please.. -->
+     <!-- end of footer -->
+
+     <!-- particle innit -->
      <div id="particles-js"></div>
+     <!-- end -->
+
+     <!-- include all this please.. -->
      <script src="script.js"></script>
      <script defer src="scroll.js"></script>
-     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
      <script>
+          // important para mapagana yung particles js
           particlesJS.load('particles-js', 'particles.json', function() {
             console.log('Particles.js config loaded');
           });
      </script>
-        
+     <!-- end -->
 </body>
 </html>
