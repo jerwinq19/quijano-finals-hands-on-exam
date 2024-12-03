@@ -148,6 +148,11 @@ body {
      box-shadow: 5px 5px var(--green);
 }
 
+.img-container:hover {
+     transform: translateY(-10px);
+     box-shadow: var(--green) 0px 0px 50px;     
+}
+
 .img-container img {
      width: 100%;
      height: auto;
