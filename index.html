@@ -6,12 +6,12 @@
      <title>Portfolio ni Jarwin!</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="style.css">
-     <link rel="shortcut icon" href="ico malupit.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="./images/ico malupit.ico" type="image/x-icon">
 </head>
 <body>
 
      <nav class="nav-bar">
-          <h1>nxco</h1>
+          <a href="" id="#home" class="nav-a">nxco</a>
           <ul class="link-container" id="navLinks">
                <li><a href="#home">Home</a></li>
               <li><a href="#aboutme">About Me</a></li>
@@ -39,15 +39,15 @@
           </div>
      </main>
      
-     <main class="about-me" >
-          <div class="terminal-header">
+     <main class="about-me hidden" >
+          <div class="terminal-header" id="aboutme">
                <span class="circle-1"></span>
                <span class="circle-2"></span>
                <span class="circle-3"></span>
           </div>
           <div class="terminal-body">
                <h1>About me</h1>
-               <div class="name-info" id="aboutme">
+               <div class="name-info">
                     <p>&gt; Name</p>
                     <p class="output">"Jerwin Nico H. Quijano"</p>
                </div>
@@ -88,49 +88,7 @@
                     <p>&gt; Jerwin Nico Interest</p>
                     <p class="output">["Cycling", "Play Online Games", "Code", "Listen to Music"]</p>
                </div>
-               <div class="skills" id="skills">
-                    <p>&gt; Jerwin Nico Skills</p>
-                    <p class="output">
-                         ["JavaScript", "HTML", "CSS", "git", "Python", "Responsive Design", "Figma"]
-                    </p>
-                     
-                    <p>&gt; JavaScript</p>
-                    <div class="skill-wrapper">
-                         <div class="skill-bar js">20%</div>
-                    </div>
-                     
-                    <p>&gt; HTML</p>
-                    <div class="skill-wrapper">
-                         <div class="skill-bar html">90%</div>
-                    </div>
-                     
-                    <p>&gt; CSS</p>
-                    <div class="skill-wrapper">
-                         <div class="skill-bar css">70%</div>
-                    </div>
-                     
-                    <p>&gt; git</p>
-                    <div class="skill-wrapper">
-                         <div class="skill-bar git">30%</div>
-                    </div>
-                     
-                    <p>&gt; Python</p>
-                    <div class="skill-wrapper">
-                         <div class="skill-bar python">75%</div>
-                    </div>
-                     
-                    <p>&gt; Responsive Design</p>
-                    <div class="skill-wrapper">
-                         <div class="skill-bar responsive">60%</div>
-                    </div>
-                     
-                    <p>&gt; Figma</p>
-                    <div class="skill-wrapper">
-                         <div class="skill-bar figma">50%</div>
-                    </div>
-          
-               </div>
-
+     
                <span class="my-typing">
                     <p>&gt;</p>
                     <p class="typing">&nbsp;&nbsp;</p>
@@ -139,12 +97,69 @@
           </div>
      </main>
 
-     <main class="project-section" id="projects">
-          <h1 class="project-h1">Projects</h1>
+     <section class="skill-cont hidden">
+          <div class="terminal-header" id="skills">
+               <span class="circle-1"></span>
+               <span class="circle-2"></span>
+               <span class="circle-3"></span>
+          </div>
+          <div class="terminal-body">
+               <h1>Skills</h1>
+               <div class="skills" >
+                    <p>&gt; Jerwin Nico Skills</p>
+                    <p class="output">
+                         ["JavaScript", "HTML", "CSS", "git", "Python", "Responsive Design", "Figma"]
+                    </p>
+                    
+                    <p>&gt; JavaScript</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar js">20%</div>
+                    </div>
+                    
+                    <p>&gt; HTML</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar html">90%</div>
+                    </div>
+                    
+                    <p>&gt; CSS</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar css">70%</div>
+                    </div>
+                    
+                    <p>&gt; git</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar git">30%</div>
+                    </div>
+                    
+                    <p>&gt; Python</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar python">75%</div>
+                    </div>
+                    
+                    <p>&gt; Responsive Design</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar responsive">60%</div>
+                    </div>
+                    
+                    <p>&gt; Figma</p>
+                    <div class="skill-wrapper">
+                         <div class="skill-bar figma">50%</div>
+                    </div>
+
+                    <span class="my-typing">
+                         <p>&gt;</p>
+                         <p class="typing">&nbsp;&nbsp;</p>
+                    </span>
+               </div>
+          </div>
+     </section>
+
+     <main class="project-section">
+          <h1 class="project-h1"  id="projects">Projects</h1>
           <!-- Lustrio Website -->
-          <div class="card">
+          <div class="card hidden">
                <div class="card-image">
-                    <img src="./images/kiss ni ming.gif" alt="">
+                    <img src="./images/lustrio-pic.jpg" alt="">
                </div>
                <div class="card-disc">
                     <h1>Lustrio Website</h1>
@@ -162,7 +177,7 @@
                </div>
           </div>
           <!-- portfolio website -->
-          <div class="card">
+          <div class="card hidden">
                <div class="card-disc">
                     <h1>Portfolio Website</h1>
                     <p>Welcome to my portfolio! Here, you can explore my projects, skills, and passion for front-end development. I specialize in creating clean, responsive, and user-friendly websites.</p>
@@ -179,16 +194,16 @@
                </div>
 
                <div class="card-image">
-                    <img src="./images/kiss ni ming.gif" alt="">
+                    <img src="./images/portfolio-pic.jpg" alt="">
                </div>
           </div>
 
           <!-- todo list ni jerwin -->
 
-          <div class="card">
+          <div class="card hidden">
 
                <div class="card-image">
-                    <img src="./images/kiss ni ming.gif" alt="">
+                    <img src="./images/todo list.jpg" alt="">
                </div>
 
                <div class="card-disc">
@@ -210,7 +225,7 @@
      </main>
 
 
-     <section class="contact" id="contact">
+     <section class="contact hidden" id="contact">
           <div class="cont-container">
                <div class="terminal-header">
                     <span class="circle-1"></span>
@@ -249,5 +264,6 @@
           </div>
      </footer>
      <script src="script.js"></script>
+     <script defer src="scroll.js"></script>
 </body>
 </html>
